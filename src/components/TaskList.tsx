@@ -33,7 +33,7 @@ export function TaskList() {
     const taskList = [...tasks];
     taskList.forEach((task) => {
       if (task.id === id) {
-        task.isComplete = true;
+        task.isComplete = !task.isComplete;
       }
     });
 
